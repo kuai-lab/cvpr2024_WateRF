@@ -1,0 +1,52 @@
+dataset_name = llff
+datadir = ./data/llff/room
+expname =  room_watermark
+basedir = ./log
+
+# For watermark
+ckpt = ./data/pretrained_TensoRF/llff_VM-48/ckpt/flower.th
+msg_decoder_path = ./data/pretrained_decoder/16_256_decoder_whit.pth
+val_num = 3
+
+loss_i = "watson-vgg"
+loss_w = "bce"
+
+lambda_i = 0.1
+lambda_l1 = 0.1
+lambda_ssim = 0.06
+lambda_tv = 0.02
+
+epoch = 10
+dwt_level = 2
+dwt_wave = 'bior4.4'
+dwt_mode = 'periodization'
+
+downsample_train = 4.0
+ndc_ray = 1
+
+n_iters = 25000
+batch_size = 4096
+
+N_voxel_init = 2097156 # 128**3
+N_voxel_final = 262144000 # 640**3
+upsamp_list = [2000,3000,4000,5500]
+update_AlphaMask_list = [2500]
+
+N_vis = -1 # vis all testing images
+vis_every = 10000
+
+render_test = 1
+render_path = 1
+
+n_lamb_sigma = [16,4,4]
+n_lamb_sh = [48,12,12]
+
+shadingMode = MLP_Fea
+fea2denseAct = relu
+
+view_pe = 0
+fea_pe = 0
+
+TV_weight_density = 1.0
+TV_weight_app = 1.0
+
