@@ -1,5 +1,5 @@
 dataset_name = blender
-datadir = ./data/syn/lego
+datadir = ./data/NeRF_dataset/syn/lego
 expname =  lego_watermark
 basedir = ./log
 

@@ -23,13 +23,13 @@ conda activate WateRF
 Next, install the required packages:
 ```bash
 pip install torch torchvision  # Make sure to install the appropriate versions for your setup
-pip install tqdm scikit-image opencv-python configargparse lpips imageio-ffmpeg kornia tensorboard pytorch-wavelet
+pip install tqdm scikit-image opencv-python configargparse lpips icecream imageio-ffmpeg kornia tensorboard plyfile pytorch-wavelets pywavelets
 ```
 
 ## Data Preparation
 To prepare the dataset and pre-trained weights for training and evaluation, follow these steps:
 
-1. Download the NeRF dataset from [NeRF Dataset Link](https://drive.google.com/drive/folders/128yBriW1IG_3NJ5Rp7APSTZsJqdJdfc1).
+1. Download the NeRF dataset from [NeRF Datasets Link](https://drive.google.com/drive/folders/128yBriW1IG_3NJ5Rp7APSTZsJqdJdfc1).
 
 2. Extract the downloaded dataset and place it in the `./data` directory. Your directory structure should look like this:
     ```
@@ -44,7 +44,7 @@ To prepare the dataset and pre-trained weights for training and evaluation, foll
     └── ...
     ```
 
-3. Download the TensoRF pre-trained weights from [TensoRF Pretrained link](https://onedrive.live.com/?id=C624178FAB774B7!141&resid=C624178FAB774B7!141&authkey=!AKpIQCzsxSTyFXA&cid=0c624178fab774b7).
+3. Download the TensoRF pre-trained weights from [TensoRF Pretrained Wieghts link](https://onedrive.live.com/?id=C624178FAB774B7!141&resid=C624178FAB774B7!141&authkey=!AKpIQCzsxSTyFXA&cid=0c624178fab774b7).
 
 4. Place the pre-trained weights in the `./data/TensoRF_weights` directory. Your final directory structure should look like this:
     ```
@@ -88,13 +88,13 @@ Ensure that the paths in your configuration files are set correctly to match the
 ### Training
 To train the model, run the following command:
 ```bash
-python -u train_watermarking.py ./configs/lego.txt
+python -u train_watermarking_dwt.py --config configs/lego.txt
 ```
 
 ### Rendering
 To render images using the trained model, run:
 ```bash
-python train.py --config configs/lego.txt --ckpt path/to/your/watermarked_checkpoint --render_only 1 --render_test 1
+python train_watermarking_dwt.py --config configs/lego.txt --ckpt path/to/your/watermarked_checkpoint --render_only 1 --render_test 1
 ```
 
 ## Citation

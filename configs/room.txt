@@ -1,5 +1,5 @@
 dataset_name = llff
-datadir = ./data/llff/room
+datadir = ./data/NeRF_dataset/llff/room
 expname =  room_watermark
 basedir = ./log
 
