@@ -54,8 +54,8 @@ To prepare the dataset and pre-trained weights for training and evaluation, foll
     │   │   ├── llff/
     │   │   ├── syn/
     │   ├── TensoRF_weights/
-    │   │   ├── weight_file1.pth
-    │   │   └── weight_file2.pth
+    │   │   ├── weight_file1.th
+    │   │   └── weight_file2.th
     ├── assets/
     ├── configs/
     ├── train_watermarking_dwt.py
@@ -70,11 +70,11 @@ To prepare the dataset and pre-trained weights for training and evaluation, foll
     │   │   ├── llff/
     │   │   ├── syn/
     │   ├── TensoRF_weights/
-    │   │   ├── weight_file1.pth
-    │   │   └── weight_file2.pth
+    │   │   ├── weight_file1.th
+    │   │   └── weight_file2.th
     ├── loss/
     │   ├── losses/
-    │   │   ├── vgg.pth
+    │   │   ├── rgb_watson_vgg_trial0.pth
     │   │   └── ...
     ├── assets/
     ├── configs/
