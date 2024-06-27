@@ -6,7 +6,7 @@ from utils import *
 from dataLoader.ray_utils import ndc_rays_blender
 import torchvision.transforms as transforms
 from pytorch_wavelets import DWTInverse, DWTForward
-from models.Attack import Attacker
+from models.attack import Attacker
 
 # renderer
 def OctreeRender_trilinear_fast(rays, tensorf, chunk=4096, N_samples=-1, ndc_ray=False, white_bg=True, is_train=False, device='cuda'):
