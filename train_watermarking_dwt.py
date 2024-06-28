@@ -461,7 +461,7 @@ def finetuning_deferred_backpropagation(args):
         bit_acc_ = evaluation_bit_accuracy(f'{logfolder}/rendering_imgs_path_all_{args.expname}/', msg_decoder, key)
         np.savetxt(f'{savePath}/bit_acc_mean.txt', np.asarray([bit_acc_]))
 
-        evalutaion_attack_bit_accuracy(f'{logfolder}/rendering_imgs_path_all_/',msg_decoder,key,renderer, f'{logfolder}/rendering_imgs_path_all_{args.expname}/', device=device)
+        evalutaion_attack_bit_accuracy(f'{logfolder}/rendering_imgs_path_all_{args.expname}/',msg_decoder,key,renderer, f'{logfolder}/rendering_imgs_path_all_{args.expname}/', device=device)
 
     # save lambda_i_list
     lambda_path = logfolder + "/lambda_i_list.txt"
@@ -534,7 +534,7 @@ def render_test(args):
         bit_acc_ = evaluation_bit_accuracy(f'{logfolder}/rendering_imgs_path_all_{args.expname}/', msg_decoder, key)
         np.savetxt(f'{savePath}/bit_acc_mean.txt', np.asarray([bit_acc_]))
 
-        evalutaion_attack_bit_accuracy(f'{logfolder}/rendering_imgs_path_all_/',msg_decoder,key,renderer, f'{logfolder}/rendering_imgs_path_all_{args.expname}/', device=device)
+        evalutaion_attack_bit_accuracy(f'{logfolder}/rendering_imgs_path_all_{args.expname}/',msg_decoder,key,renderer, f'{logfolder}/rendering_imgs_path_all_{args.expname}/', device=device)
 
 
 def reconstruction(args):
