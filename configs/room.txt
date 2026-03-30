@@ -4,7 +4,7 @@ expname =  room_watermark
 basedir = ./log
 
 # For watermark
-ckpt = ./data/pretrained_TensoRF/llff_VM-48/ckpt/flower.th
+ckpt = ./data/pretrained_TensoRF/llff_VM-48/ckpt/room.th
 msg_decoder_path = ./data/pretrained_decoder/16_256_decoder_whit.pth
 val_num = 3
 
