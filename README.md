@@ -44,7 +44,7 @@ To prepare the dataset and pre-trained weights for training and evaluation, foll
     └── ...
     ```
 
-3. Download the TensoRF pre-trained weights from [TensoRF Pretrained Wieghts link](https://onedrive.live.com/?id=C624178FAB774B7!141&resid=C624178FAB774B7!141&authkey=!AKpIQCzsxSTyFXA&cid=0c624178fab774b7).
+3. Download the TensoRF pre-trained weights from [TensoRF Pretrained Wieghts link](https://onedrive.live.com/?id=C624178FAB774B7!141&resid=C624178FAB774B7!141&authkey=!AKpIQCzsxSTyFXA&cid=0c624178fab774b7) in original [TenoRF repo](https://github.com/apchenstu/TensoRF).
 
 4. Place the pre-trained weights in the `./data/TensoRF_weights` directory. Your final directory structure should look like this:
     ```
