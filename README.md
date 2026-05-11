@@ -84,6 +84,13 @@ To prepare the dataset and pre-trained weights for training and evaluation, foll
 
 Ensure that the paths in your configuration files are set correctly to match the locations of the dataset, pre-trained weights, and loss weights.
 
+## **Results and Weights**
+
+We provide results and weights for all scenes presented in our paper.
+- **Download**: [Link](https://kuaicv.synology.me/weights/cvpr2024/WateRF/WateRF_weights.zip)
+
+
+
 ## Usage
 ### Training
 To train the model, run the following command:
