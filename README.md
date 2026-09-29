@@ -29,7 +29,7 @@ pip install tqdm scikit-image opencv-python configargparse lpips icecream imagei
 ## Data Preparation
 To prepare the dataset and pre-trained weights for training and evaluation, follow these steps:
 
-1. Download the NeRF dataset from [NeRF Datasets Link](https://drive.google.com/drive/folders/128yBriW1IG_3NJ5Rp7APSTZsJqdJdfc1).
+1. Download the NeRF dataset from [NeRF Datasets Link](https://drive.google.com/drive/folders/1cK3UDIJqKAAm7zyrxRYVFJ0BRMgrwhh4?usp=drive_link).
 
 2. Extract the downloaded dataset and place it in the `./data` directory. Your directory structure should look like this:
     ```
@@ -44,7 +44,7 @@ To prepare the dataset and pre-trained weights for training and evaluation, foll
     └── ...
     ```
 
-3. Download the TensoRF pre-trained weights from [TensoRF Pretrained Wieghts link](https://onedrive.live.com/?id=C624178FAB774B7!141&resid=C624178FAB774B7!141&authkey=!AKpIQCzsxSTyFXA&cid=0c624178fab774b7) in original [TenoRF repo](https://github.com/apchenstu/TensoRF).
+3. Download the TensoRF pre-trained weights from official [TenoRF repo](https://github.com/apchenstu/TensoRF).
 
 4. Place the pre-trained weights in the `./data/TensoRF_weights` directory. Your final directory structure should look like this:
     ```
