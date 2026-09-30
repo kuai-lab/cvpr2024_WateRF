@@ -95,8 +95,6 @@ Ensure that the paths in your configuration files are set correctly to match the
 We provide results and weights for all scenes presented in our paper.
 - **Download**: [Link](https://kuaicv.synology.me/weights/cvpr2024/WateRF/WateRF_weights.zip)
 
-
-
 ## Usage
 ### Training
 To train the model, run the following command:
@@ -109,6 +107,13 @@ To render images using the trained model, run:
 ```bash
 python train_watermarking_dwt.py --config configs/lego.txt --ckpt path/to/your/watermarked_checkpoint --render_only 1 --render_test 1
 ```
+### Evaluation
+To evaluate images, run:
+```bash
+python evaluation.py watermarked_image_path gt_image_path
+```
+Note that the ground truth refers to the images rendered from the pre-trained model.
+
 
 ## Citation
 If you find our work useful in your research, please consider citing:
