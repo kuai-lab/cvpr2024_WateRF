@@ -1,10 +1,10 @@
 dataset_name = llff
-datadir = ./data/NeRF_dataset/llff/flower
-expname =  flower_watermark
+datadir = ./data/NeRF_dataset/llff/fern
+expname =  fern_watermark
 basedir = ./log
 
 # For watermark
-ckpt = ./data/TensoRF_weights/llff/ckpt/flower.th
+ckpt = ./data/TensoRF_weights/llff/ckpt/fern.th
 msg_decoder_path = ./data/pretrained_decoder/16_256_decoder_whit.pth
 val_num = 3
 
@@ -16,7 +16,7 @@ lambda_l1 = 0.1
 lambda_ssim = 0.06
 lambda_tv = 0.02
 
-epoch = 5
+epoch = 10
 save_epochs = [2,3,4,5]
 dwt_level = 2
 dwt_wave = 'bior4.4'

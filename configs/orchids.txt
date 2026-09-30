@@ -1,10 +1,10 @@
 dataset_name = llff
-datadir = ./data/NeRF_dataset/llff/flower
-expname =  flower_watermark
+datadir = ./data/NeRF_dataset/llff/orchids
+expname =  orchids_watermark
 basedir = ./log
 
 # For watermark
-ckpt = ./data/TensoRF_weights/llff/ckpt/flower.th
+ckpt = ./data/TensoRF_weights/llff/ckpt/orchids.th
 msg_decoder_path = ./data/pretrained_decoder/16_256_decoder_whit.pth
 val_num = 3
 

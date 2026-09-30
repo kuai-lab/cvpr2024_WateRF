@@ -4,19 +4,20 @@ expname =  room_watermark
 basedir = ./log
 
 # For watermark
-ckpt = ./data/pretrained_TensoRF/llff_VM-48/ckpt/room.th
+ckpt = ./data/TensoRF_weights/llff/ckpt/room.th
 msg_decoder_path = ./data/pretrained_decoder/16_256_decoder_whit.pth
 val_num = 3
 
 loss_i = "watson-vgg"
 loss_w = "bce"
 
-lambda_i = 0.1
+lambda_i = 0.35
 lambda_l1 = 0.1
 lambda_ssim = 0.06
 lambda_tv = 0.02
 
-epoch = 10
+epoch = 5
+save_epochs = [2,3,4,5]
 dwt_level = 2
 dwt_wave = 'bior4.4'
 dwt_mode = 'periodization'
@@ -49,4 +50,3 @@ fea_pe = 0
 
 TV_weight_density = 1.0
 TV_weight_app = 1.0
-

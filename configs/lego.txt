@@ -4,7 +4,7 @@ expname =  lego_watermark
 basedir = ./log
 
 # For watermark
-ckpt = ./data/pretrained_TensoRF/syn_VM-48/ckpt/lego.th
+ckpt = ./data/TensoRF_weights/syn/ckpt/lego.th
 msg_decoder_path = ./data/pretrained_decoder/16_256_decoder_whit.pth
 val_num = 3
 
@@ -17,6 +17,7 @@ lambda_ssim = 0.06
 lambda_tv = 0.02
 
 epoch = 10
+save_epochs = [7,8,9,10]
 dwt_level = 2
 dwt_wave = 'bior4.4'
 dwt_mode = 'periodization'

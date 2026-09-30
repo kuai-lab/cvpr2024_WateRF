@@ -1,10 +1,10 @@
 dataset_name = blender
-datadir = ./data/NeRF_dataset/syn/chair
-expname =  chair_watermark
+datadir = ./data/NeRF_dataset/syn/ficus
+expname =  ficus_watermark
 basedir = ./log
 
 # For watermark
-ckpt = ./data/TensoRF_weights/syn/ckpt/chair.th
+ckpt = ./data/TensoRF_weights/syn/ckpt/ficus.th
 msg_decoder_path = ./data/pretrained_decoder/16_256_decoder_whit.pth
 val_num = 3
 
@@ -22,7 +22,6 @@ dwt_level = 2
 dwt_wave = 'bior4.4'
 dwt_mode = 'periodization'
 
-# For pretrain
 n_iters = 30000
 batch_size = 4096
 
