@@ -25,6 +25,8 @@ Next, install the required packages:
 pip install torch torchvision  # Make sure to install the appropriate versions for your setup
 pip install tqdm scikit-image opencv-python configargparse lpips icecream imageio-ffmpeg kornia tensorboard plyfile pytorch-wavelets pywavelets
 ```
+To use DWT, install pytorch wavelet [pytorch_wavelet Link](https://github.com/fbcotter/pytorch_wavelets)
+
 
 ## Data Preparation
 To prepare the dataset and pre-trained weights for training and evaluation, follow these steps:
