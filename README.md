@@ -93,7 +93,36 @@ Ensure that the paths in your configuration files are set correctly to match the
 ## **Results and Weights**
 
 We provide results and weights for all scenes presented in our paper.
-- **Download**: [Link](https://kuaicv.synology.me/weights/cvpr2024/WateRF/WateRF_weights.zip)
+- **Download**: [Link](https://kuaicv.synology.me/weights/cvpr2024/WateRF/waterf_pretrained_model.zip)
+
+## Docker
+
+We additionally provide docker image.
+
+- [docker image link](https://kuaicv.synology.me/weights/cvpr2024/WateRF/waterf-cuda11.8-v1.tar.gz)
+
+```bash
+pv waterf-cuda11.8-v1.tar.gz | gunzip | sudo docker load
+
+sudo docker images waterf:cuda11.8-v1
+
+sudo docker run --rm \
+  --device nvidia.com/gpu=all \
+  waterf:cuda11.8-v1 \
+  python -c "import torch; print(torch.__version__); print(torch.cuda.get_device_name(0)); print(torch.cuda.is_available())"
+
+sudo docker run -it \
+  --device nvidia.com/gpu=all \
+  --shm-size=16g \
+  --name waterf-work \
+  -v "$PWD/data:/workspace/WateRF/data" \
+  -v "$PWD/loss/losses:/workspace/WateRF/loss/losses" \
+  -v "$PWD/log:/workspace/WateRF/log" \
+  -w /workspace/WateRF \
+  waterf:cuda11.8-v1 \
+  bash
+```
+
 
 ## Usage
 ### Training
