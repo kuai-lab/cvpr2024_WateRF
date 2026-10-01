@@ -155,7 +155,3 @@ If you find our work useful in your research, please consider citing:
   year={2024}
 }
 ```
-
-## TO-DO List
-- [ ] Load watermarked weights and result
-- [ ] Add instructions for using a custom dataset
